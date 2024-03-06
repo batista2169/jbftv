@@ -1,0 +1,139 @@
+<!DOCTYPE html JBF-TV PUBLIC>
+<html lang="pt-BR">
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta http-equiv="Content-Language" content="pt-br">
+<meta content='text/html; charset=WINDOWS-1252' http-equiv='Content-Type'/>
+<script language='JavaScript'>var txt=" :::::  JBF TV  :::::  Levando Informação e Entretenimento Até Você! "; var espera=100; var refresco=null; function rotulo_title() { document.title=txt; txt=txt.substring(1,txt.length)+txt.charAt(0); refresco=setTimeout("rotulo_title()",espera);} rotulo_title(); </script>
+<script language='JavaScript1.2'></script>
+<link href='https://03cbda85-a-62cb3a1a-s-sites.googlegroups.com/site/jbftvs/imag/blog/tvlogofavi.ico' rel='icon' type='image/x-icon'/>
+<title>JBF-TV</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/reidoscanais/rdc@main/assets/css/player-v3.1.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/reidoscanais/rdc@main/assets/css/hotstar.css">
+</head>
+<!-- JWPLAYER E SUAS VERSÕES
+jwplayer.js versões 8.0.0 a 8.32.0
+ <script src="https://cdn.jsdelivr.net/gh/reidoscanais/rdc@main/assets/jwplayer/jwplayer.latest.js"></script> //v8.26.0
+<script src="https://ssl.p.jwpcdn.com/player/v/8.6.2/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";</script>
+<script> jwplayer.key = "ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc=";</script>
+<script> jwplayer.key = "uoW6qHjBL3KNudxKVnwa3rt5LlTakbko9e6aQ6VUyKQ=";</script>
+<script> jwplayer.key = "0Q039zYWo55T1IbYymkESTKQl28LdPRxeSVLP3evRZ4=";</script>
+<script> jwplayer.key = "ssbF6k0i9BPe87xfG/s0ipdp5gwbLoZaDON/GQvuwPU9nVJy";</script>
+<script> jwplayer.key = "nK/znjbTjw7KzOyB+z/jKH02ejAHHUIP8B4Va42PHcjmxYtH3rnP2Hp7EpzNnosm";</script>
+
+jwplayer.js versões 7.0.0 a 7.12.13
+<script src="https://ssl.p.jwpcdn.com/player/v/7.8.3/jwplayer.js"></script>
+<script> jwplayer.key = "ftjvkP4Hyf7gB3Y/mnYza01fCLcz36eSFagTl5+SZkk=";</script>
+<script type="text/javascript">jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';</script>
+<script> jwplayer.key = "GO/bHvcIycFaixHqFyFeXsWuMA5+Yr1Dm+PmH6I3sZ0=";</script>
+
+https://docs.jwplayer.com/players/reference/playlists#playlist-sources
+ -->
+<body bgcolor="#F0FFF0">
+<section id="jbf-tv player">
+<div id="player" style="position: relative; display: block; width:100%;height:100%;background-color:#3366FF;">
+<script src="https://ssl.p.jwpcdn.com/player/v/8.8.0/jwplayer.js"></script>
+<script> jwplayer.key = "ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc=";</script>
+
+
+<div id="player">Loading Player...</div> 
+<script type="text/javascript">
+  var playerInstance = jwplayer("player");
+  playerInstance.setup({
+    playlist: [{
+        file: "http://tv.mapfibra.com.br:8555/live/1496/123456/19.m3u8",
+        image: "https://observatoriodatv.uol.com.br/wp-content/uploads/2015/01/Logo-Band-1024x8351.jpg",
+        title: "BAND",
+        description: "Canal da TV Aberta"
+        },{
+        file: "http://joao-1-us.mainbkonline.shop/live/363414831673BL/363414998112/340.m3u8",
+        image: "https://recordtv.r7.com/files/2016/11/logo-ok-.jpg",
+        title: "Recordtv",
+        description: "Canal da TV Aberta"
+        },{
+        file: "http://joao-1-us.mainbkonline.shop/live/363414831673BL/363414998112/324.m3u8",
+        image: "/uploads/bunny.jpg",
+        title: "RIC TV",
+        description: "This  animated film is made using free and open source software."
+        },{
+        file: "https://stream.live.novotempo.com/tv/smil:tvnovotempo.smil/playlist.m3u8",
+        image: "/uploads/elephants.jpg",
+        title: "Globo",
+        description: "This is the worlds first open movie, made entirely with Blender."
+        },{
+          "default": false,
+          "type": "dash",
+          "file": "https://0003-vos.dtvott.com/DASH/manifest.mpd",
+          "drm": {
+            "clearkey": {"keyId": "5fcfd3117f6c39cfb75f507ea45cf150", "key": "564ba92660a59472dbe353dec6e2df1f"}
+          },
+         image: "https://imagem.natelinha.uol.com.br/original/canalaxn_fd18fa5a810269d31ed3236e86240a0c6d9d0bf0.jpeg",
+         title: "AXN",
+         description: "Canal da TV Fechada"
+       },{
+    }],
+    autostart: false,
+    mute: false,
+    controls: true,
+    aspectratio: "",
+    pipEnabled: true,
+    stretching: "exactfit",      //uniform|fill|exactfit|bestfit|none
+    primary:"flash",
+    repeat: true,
+    width: "100%",
+    height: "100%",
+    skin: {
+      controlbar: {
+         //background: "#2F4F4F",
+         icons: "#F5F5DC",
+         iconsActive: "#FFFFFF",
+         text: "#FFFFF0"
+    },
+    menus: {
+         background: "#4682B4",
+         text: "#FFFFF0",
+         textActive: "#FFFFFF"
+    },
+    timeslider: {
+            progress: "#F2F2F2",
+            rail: "rgba(255,255,255,0.3)"
+        },
+    name: "roundster",     //beelden|bekle|five|glow|modieus|roundster|six|stormtrooper|vapor
+    tooltips: {
+         background: "#00868B",
+         text: "#FFFFF0"
+    }
+    },
+    //sharing: { heading: "Partilhar Video",
+    //},
+    sharing: {sites:["facebook", "twitter", "email", "interest", "tumblr", "linkedin", "reddit"]
+    },
+    fallback: false,
+    androidhls: "true",
+    logo: {
+      file: '',
+      link: '',
+      hide: '',
+      position: 'top-right' //top-right|top-left|bottom-right|bottom-left|control-bar
+    },
+
+  });
+
+//self.jwPlayer?.playerView.allowsPictureInPicturePlayback: true,
+jwplayer().on('play', function(){
+  setTimeout(function(){
+  var textAlt = document.querySelectorAll('#' + jwplayer().id + ' .jw-controlbar-center-group .jw-text-alt')[0];
+  if(textAlt) textAlt.innerHTML = "BAND - Ao Vivo";
+  },300);
+
+ });
+
+ window.addEventListener('load', function() {
+ setTimeout(function() {setupPlayer(w, h);}, 100);
+});
+</script>
+</div> 
+</section>
+</body>
+</html>
