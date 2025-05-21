@@ -5,7 +5,7 @@
 */
 
 function setLink() {	
-	var jb_player = document.getElementById("jb_player");
+	var script = document.getElementById("script");
 	var e = window.location.href;
 		e = e.split('?source=');
 		e = e[1];
@@ -13,7 +13,7 @@ function setLink() {
 
 var streams = ['e','/error.m3u8'];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-var script = document.createElement('jb_player');
+var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
 //video.load();
