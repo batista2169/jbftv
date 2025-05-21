@@ -9,7 +9,7 @@ function setLink() {
 	var e = window.location.href;
 		e = e.split('?source=');
 		e = e[1];
-		alert(e);
+		alert(window.location.href);
 
 	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
 	//var element = document.getElementById("jb_player");
