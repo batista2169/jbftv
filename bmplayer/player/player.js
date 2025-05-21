@@ -28,11 +28,11 @@ document.head.appendChild(script);
 		//}
 	
 
-	if(window.bradmax && window.bradmax.player) {
-		setLink();
-	} else {
-		window.addEventListener('load', setLink);
-		}
+	//if(window.bradmax && window.bradmax.player) {
+		//setLink();
+	//} else {
+		//window.addEventListener('load', setLink);
+		//}
 
 
 
