@@ -9,25 +9,25 @@ function setLink() {
 	var e = window.location.href;
 		e = e.split('?source=');
 		e = e[1];
-		alert(window.location.href);
+		alert(e);
 
-	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
-	//var element = document.getElementById("jb_player");
-	//var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
+	var bradmaxPlayerConfig = {dataProvider:{source:[{url:e}]},autoplay:true};
+	var element = document.getElementById("jb_player");
+	var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
 
-	//if(!window.player) {
-	//	window.player = player;
-	//	}
-	//}
+	if(!window.player) {
+		window.player = player;
+		}
+	}
 
-	//if(window.bradmax && window.bradmax.player) {
-	//	setLink();
-	//} else {
-		//window.addEventListener('load', setLink);
-		//}
+	if(window.bradmax && window.bradmax.player) {
+	setLink();
+	} else {
+		window.addEventListener('load', setLink);
+		}
 
 
-var streams = ["e","/error.m3u8"];
+var streams = [e,'/error.m3u8'];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
