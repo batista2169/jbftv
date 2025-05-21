@@ -27,9 +27,9 @@ function setLink() {
 		//}
 
 
-var streams = [n];
-function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-var script = document.createElement('script');
-script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
-document.head.appendChild(script);
+//var streams = [n];
+//function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+//var script = document.createElement('script');
+//script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+//document.head.appendChild(script);
 }
