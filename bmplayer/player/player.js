@@ -16,23 +16,23 @@ function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-//	video.load();
-//video.play();
+video.load();
+video.play();
 	
 	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:e}]},autoplay:true};
-	var element = document.getElementById("jb_player");
-	var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
+	//var element = document.getElementById("jb_player");
+	//var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
 
 	if(!window.player) {
 		window.player = player;
 		}
 	}
 
-	if(window.bradmax && window.bradmax.player) {
-		setLink();
-	} else {
-		window.addEventListener('load', setLink);
-		}
+	//if(window.bradmax && window.bradmax.player) {
+		//setLink();
+	//} else {
+		//window.addEventListener('load', setLink);
+		//}
 
 
 
