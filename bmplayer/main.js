@@ -12,7 +12,7 @@ function setLink(){
 		input.focus();
         	return false;
 	}else {
-	let jb_player = document.getElementById("jb_player");
+	let script = document.getElementById("script");
 	let input = document.getElementById("input");
 	let inputText = input.value;
 		window.alert('Canal ' + inputText + ' inserido com sucesso!');
