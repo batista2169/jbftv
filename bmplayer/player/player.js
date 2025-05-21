@@ -23,9 +23,9 @@ streams.play();
 	//var element = document.getElementById("script");
 	//var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
 
-	//if(!window.player) {
-		//window.player = player;
-		//}
+	if(!window.player) {
+		window.player = player;
+		}
 	}
 
 	//if(window.bradmax && window.bradmax.player) {
