@@ -12,6 +12,7 @@ function setLink() {
 		alert(e);
 
 var streams = [e];
+	}
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
@@ -26,7 +27,7 @@ document.head.appendChild(script);
 	//if(!window.player) {
 		//window.player = player;
 		//}
-	}
+	
 
 	if(window.bradmax && window.bradmax.player) {
 		setLink();
