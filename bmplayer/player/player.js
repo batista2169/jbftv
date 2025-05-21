@@ -10,7 +10,7 @@ function setLink() {
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
-}
+
 var streams = ['https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8','/error.m3u8']	
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
@@ -18,7 +18,7 @@ script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/
 document.head.appendChild(script);
 //video.load();
 //video.play();
-	
+	}
 	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:e}]},autoplay:true};
 	//var element = document.getElementById("script");
 	//var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
