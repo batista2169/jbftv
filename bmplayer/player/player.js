@@ -12,9 +12,9 @@ function setLink() {
 		alert(e);
 
 var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"]	
-function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
-script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
 //video.load();
 //video.play();
