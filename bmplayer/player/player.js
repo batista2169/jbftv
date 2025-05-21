@@ -34,4 +34,3 @@ function setLink() {
 //document.head.appendChild(script);
 //	video.load();
 //video.play();
-}
