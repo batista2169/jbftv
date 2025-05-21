@@ -6,10 +6,10 @@
 
 function setLink() {	
 	var jb_player = document.getElementById("jb_player");
-	var n = window.location.href;
-		n = n.split('?source=');
-		n = n[1];
-		alert(n);
+	var e = window.location.href;
+		e = e.split('?source=');
+		e = e[1];
+		alert(e);
 
 	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
 	//var element = document.getElementById("jb_player");
@@ -27,9 +27,11 @@ function setLink() {
 		//}
 
 
-//var streams = [n];
-//function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-//var script = document.createElement('script');
-//script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
-//document.head.appendChild(script);
+var streams = ["e","/error.m3u8"];
+function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+var script = document.createElement('script');
+script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+document.head.appendChild(script);
+video.load();
+video.play();
 }
