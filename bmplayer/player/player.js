@@ -4,7 +4,7 @@
     JBF-TV Player - R.Santana/BA
 */
 
-function setLink(e) {	
+function setLink() {	
 	var settingsMenu = document.getElementById("settingsMenu");
 	var e = window.location.href;
 		e = e.split('?source=');
