@@ -10,7 +10,7 @@ function setLink() {
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
-	var url = '["'+ e +'","/error.m3u8"]'
+	var url = '["'+ e +'","/error.m3u8"];'
 	alert(url);
 }
 var streams = '["'+ e + ","/error.m3u8"];
