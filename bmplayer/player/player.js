@@ -13,6 +13,8 @@ function setLink(e) {
 	var url = '["'+ e +'","/error.m3u8"]';
 	//url = url[1];
 	alert(url);
+	var video = document.getElementById('settingsMenu');
+
  if(Hls.isSupported()) {
       video.volume = 0.3;
       var hls = new Hls();
@@ -38,60 +40,11 @@ var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
 	}
-var video = document.getElementById('settingsMenu');
 
-//function setLink(e){
- 
-//}
+
 	var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
 
 
-
-//function playPause() {
- //   video.paused?video.play():video.pause();
-//}
-
-//function volumeUp() {
-  //  if(video.volume <= 0.9) video.volume+=0.1;
-//}
-
-//function volumeDown() {
-//    if(video.volume >= 0.1) video.volume-=0.1;
-//}
-
-//function seekRight() {
-//    video.currentTime+=5;
-//}
-
-//function seekLeft() {
-//    video.currentTime-=5;
-//}
-
-//function vidFullscreen() {
- //   if (video.requestFullscreen) {
-  //    video.requestFullscreen();
- // } else if (video.mozRequestFullScreen) {
-  //    video.mozRequestFullScreen();
- // } else if (video.webkitRequestFullscreen) {
-  //    video.webkitRequestFullscreen();
-  //  }
-//}
-
-//setLink(window.location.href.split("?source=")[1])
-//$(window).on('load', function () {
-  //  $('#streams').on('click', function(){this.paused?this.play():this.pause();});
-   // Mousetrap.bind('space', playPause);
-   // Mousetrap.bind('up', volumeUp);
-   // Mousetrap.bind('down', volumeDown);
-   // Mousetrap.bind('right', seekRight);
-   // Mousetrap.bind('left', seekLeft);
-    //Mousetrap.bind('f', vidFullscreen);
-//});
-
-
-
-
-	
 	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:e}]},autoplay:true};
 	//var element = document.getElementById("settingsMenu");
 	//var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
