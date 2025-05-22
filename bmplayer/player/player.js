@@ -10,7 +10,7 @@ function setLink() {
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
-	var streams = ['e[1]','/error.m3u8'];
+	var streams = '["'+ e +'","/error.m3u8"]';
 	alert(streams);
 }
 var streams = ['https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8','/error.m3u8'];
