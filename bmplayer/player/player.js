@@ -11,10 +11,10 @@ function setLink() {
 		e = e[1];
 		alert(e);
 	var url = '["'+ e +'","/error.m3u8"]';
-	url = url[1];
+	//url = url[1];
 	alert(url);
 
-var url = url;
+var stream = url;
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
