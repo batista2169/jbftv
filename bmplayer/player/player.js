@@ -6,12 +6,13 @@
 
 function setLink() {	
 	var settingsMenu = document.getElementById("settingsMenu");
-	var streams = window.location.href;
-		streams = streams.split('?source=');
-		streams = streams[1];
-		alert(streams);
-}
-var streams = ['streams','/error.m3u8'];
+	var e = window.location.href;
+		e = e.split('?source=');
+		e = e[1];
+		alert(e);
+
+var streams = ['e','/error.m3u8'];
+	}
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
