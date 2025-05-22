@@ -13,27 +13,9 @@ function setLink(e) {
 	var url = '["'+ e +'","/error.m3u8"]';
 	//url = url[1];
 	alert(url);
-	var video = document.getElementById('settingsMenu');
 
- if(Hls.isSupported()) {
-      video.volume = 0.3;
-      var hls = new Hls();
-      var streams = decodeURIComponent(e)
-      hls.loadSource(streams);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED,function() {
-        video.play();
-      });
-      document.title = e
-    }
-	else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-		video.src = e;
-		video.addEventListener('canplay',function() {
-		  video.play();
-		});
-		video.volume = 0.3;
-		document.title = e;
-  	}
+
+ 
 
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
