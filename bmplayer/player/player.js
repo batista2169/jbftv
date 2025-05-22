@@ -4,7 +4,7 @@
     JBF-TV Player - R.Santana/BA
 */
 
-function setLink() {	
+function setLink(e) {	
 	var settingsMenu = document.getElementById("settingsMenu");
 	var e = window.location.href;
 		e = e.split('?source=');
@@ -13,38 +13,39 @@ function setLink() {
 	var url = '["'+ e +'","/error.m3u8"]';
 	//url = url[1];
 	alert(url);
-
+ if(Hls.isSupported()) {
+      video.volume = 0.3;
+      var hls = new Hls();
+      var streams = decodeURIComponent(e)
+      hls.loadSource(streams);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+      });
+      document.title = e
+    }
+	else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+		video.src = e;
+		video.addEventListener('canplay',function() {
+		  video.play();
+		});
+		video.volume = 0.3;
+		document.title = e;
+  	}
 
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
 	}
-	var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
+var video = document.getElementById('settingsMenu');
 
-//var video = document.getElementById('settingsMenu');
-
-//function setLink(url){
- // if(Hls.isSupported()) {
-   //   video.volume = 0.3;
-    //  var hls = new Hls();
-     // var m3u8Url = decodeURIComponent(url)
-    //  hls.loadSource(m3u8Url);
-     // hls.attachMedia(video);
-     // hls.on(Hls.Events.MANIFEST_PARSED,function() {
-     //   video.play();
-     // });
-    //  document.title = url
-  //  }
-	//else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-		//video.src = url;
-		//video.addEventListener('canplay',function() {
-		//  video.play();
-		//});
-		//video.volume = 0.3;
-		//document.title = url;
-  	//}
+//function setLink(e){
+ 
 //}
+	var streams = ["e","/error.m3u8"];
+
+
 
 //function playPause() {
  //   video.paused?video.play():video.pause();
@@ -76,16 +77,16 @@ document.head.appendChild(script);
   //  }
 //}
 
-setLink(window.location.href.split("?source=")[1])
-$(window).on('load', function () {
-    $('#video').on('click', function(){this.paused?this.play():this.pause();});
-    Mousetrap.bind('space', playPause);
-    Mousetrap.bind('up', volumeUp);
-    Mousetrap.bind('down', volumeDown);
-    Mousetrap.bind('right', seekRight);
-    Mousetrap.bind('left', seekLeft);
-    Mousetrap.bind('f', vidFullscreen);
-});
+//setLink(window.location.href.split("?source=")[1])
+//$(window).on('load', function () {
+  //  $('#streams').on('click', function(){this.paused?this.play():this.pause();});
+   // Mousetrap.bind('space', playPause);
+   // Mousetrap.bind('up', volumeUp);
+   // Mousetrap.bind('down', volumeDown);
+   // Mousetrap.bind('right', seekRight);
+   // Mousetrap.bind('left', seekLeft);
+    //Mousetrap.bind('f', vidFullscreen);
+//});
 
 
 
