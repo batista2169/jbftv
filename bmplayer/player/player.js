@@ -14,11 +14,12 @@ function setLink() {
 	//url = url[1];
 	alert(url);
 
-var stream = url;
+
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
+	var stream = url;
 }
 //var video = document.getElementById('settingsMenu');
 
