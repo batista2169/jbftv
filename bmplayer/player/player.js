@@ -19,7 +19,7 @@ function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-	var stream = url;
+	var streams = url;
 }
 //var video = document.getElementById('settingsMenu');
 
