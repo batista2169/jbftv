@@ -20,7 +20,12 @@ var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
 
-
+function changeSource(url) {
+   var video = document.getElementById('streams');
+   video.src = e;
+   video.load()
+   video.play();
+}
 
 	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:e}]},autoplay:true};
 	//var element = document.getElementById("settingsMenu");
