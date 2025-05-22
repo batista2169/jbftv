@@ -43,7 +43,7 @@ var video = document.getElementById('settingsMenu');
 //function setLink(e){
  
 //}
-	var streams = ["e","/error.m3u8"];
+	var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
 
 
 
