@@ -5,7 +5,7 @@
 */
 
 function setLink() {	
-	var script = document.getElementById("script");
+	var settingsMenu = document.getElementById("settingsMenu");
 	var e = window.location.href;
 		e = e.split('?source=');
 		e = e[1];
