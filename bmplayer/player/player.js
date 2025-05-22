@@ -10,8 +10,8 @@ function setLink() {
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
-	var streams = '["'+ e +'","/error.m3u8"]';
-	alert(streams);
+	var url = '["'+ e +'","/error.m3u8"];'
+	alert(url);
 }
 var streams = ['https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8','/error.m3u8'];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
