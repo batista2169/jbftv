@@ -39,7 +39,7 @@ function setLink() {
 		setLink();
 	} else {
 		window.addEventListener('load', setLink);
-
+	}
 //var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
 //function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 //var script = document.createElement('script');
