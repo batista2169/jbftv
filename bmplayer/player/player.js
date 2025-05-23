@@ -3,13 +3,14 @@
     SPDX-License-Identifier: MIT
     JBF-TV Player - R.Santana/BA
 */
+
 function setLink() {	
 	var settingsMenu = document.getElementById("settingsMenu");
 	var n = window.location.href;
 		n = n.split('?source=');
 		n = n[1];
 		alert(n);
-}
+
 
 	//var url = '["'+ e +'","/error.m3u8"]';
 	//url = url[1];
@@ -23,31 +24,24 @@ function setLink() {
 //var streams = oldstreams.replace(/teste.m3u8/g, e);
 //var streams = ["teste.m3u8","/error.m3u8"];
 //console.log(streams);
-//var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
-//function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-//var script = document.createElement('script');
-//script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
-//document.head.appendChild(script);
 
-//console.log(streams);
-//function changeSource(url) {
-   
-//}
 
-	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:e}]},autoplay:true};
-	//var element = document.getElementById("settingsMenu");
+	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
+	//var element = document.getElementById("jb_player");
 	//var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
 
 	if(!window.player) {
 		window.player = player;
 		}
-	
+	}
 
-	if(window.player && window.bradmax.player) {
+	if(window.bradmax && window.bradmax.player) {
 		setLink();
 	} else {
 		window.addEventListener('load', setLink);
-		}
 
-
-
+var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
+function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+var script = document.createElement('script');
+script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+document.head.appendChild(script);
