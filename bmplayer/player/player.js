@@ -20,10 +20,10 @@ function setLink() {
    //video.load()
   // video.play();
 	//var streams = ["e","/error.m3u8"];
-var oldstreams = "teste.m3u8";
+//var oldstreams = "teste.m3u8";
 //var streams = ["teste.m3u8","/error.m3u8"];
-var streams = oldstreams.replace(/teste.m3u8/g, e);
-alert(streams);
+//var streams = oldstreams.replace(/teste.m3u8/g, "e");
+//alert(streams);
 
 
 	var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
