@@ -21,14 +21,14 @@ function setLink() {
 	video.play();
 	}
 
-var streams = ['e','/error.m3u8'];
+var streams = [e];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
 
 	
-//var exemplo = "Aprendendo JavaScript na DevMedia!";
+//var exemplo = "Aprendendo JavaScript na DevMedia!"; ,'/error.m3u8'
 //var resultado = exemplo.replace("JavaScript", "PHP");
 //console.log(resultado);
 
