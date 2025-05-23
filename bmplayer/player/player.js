@@ -12,10 +12,10 @@ function setLink() {
 		alert(e);
 }
 	//if (n == "m3u8"){
-	var streams = {
+	var streams = [
 		src: e,
 		type: 'application/x-mpegURL'
- 		};
+ 		];
 	video.src(streams);
 	video.load();
 	video.play();
