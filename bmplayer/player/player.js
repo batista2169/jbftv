@@ -10,7 +10,7 @@ function setLink() {
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
-}
+
 	//if (n == "m3u8"){
 	var streams = {
 		src: e,
