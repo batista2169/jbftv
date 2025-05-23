@@ -19,7 +19,7 @@ function setLink() {
 	video.src(streams);
 	video.load();
 	video.play();
-	//}
+	}
 
 var streams = ['e','/error.m3u8'];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
