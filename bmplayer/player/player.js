@@ -10,9 +10,9 @@ function setLink() {
 		n = n.split('?source=');
 		n = n[1];
 		alert(n);
-var exemplo = "Aprendendo JavaScript na DevMedia!";
-var resultado = exemplo.replace("JavaScript", "PHP");
-console.log(resultado);
+//var exemplo = "Aprendendo JavaScript na DevMedia!";
+//var resultado = exemplo.replace("JavaScript", "PHP");
+//console.log(resultado);
 
 	//var url = '["'+ e +'","/error.m3u8"]';
 	//url = url[1];
