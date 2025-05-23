@@ -10,9 +10,9 @@ function setLink() {
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
-	var url = '["'+ e +'","/error.m3u8"]';
+	//var url = '["'+ e +'","/error.m3u8"]';
 	//url = url[1];
-	alert(url);
+	//alert(url);
 	//var video = document.getElementById('streams');
    //video.src = e;
    //video.load()
