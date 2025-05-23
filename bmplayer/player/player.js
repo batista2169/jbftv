@@ -6,27 +6,27 @@
 
 function setLink() {	
 	var settingsMenu = document.getElementById("settingsMenu");
-	var n = window.location.href;
-		n = n.split('?source=');
-		n = n[1];
-		alert(n);
+	var e = window.location.href;
+		e = e.split('?source=');
+		e = e[1];
+		alert(e);
 
 	//if (n == "m3u8"){
 	var streams = {
-		src: n,
+		src: e,
 		type: 'application/x-mpegURL'
  		};
 	video.src(streams);
 	video.load();
 	video.play();
 	//}
-
+}
 //var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-}
+
 	
 //var exemplo = "Aprendendo JavaScript na DevMedia!";
 //var resultado = exemplo.replace("JavaScript", "PHP");
