@@ -27,7 +27,7 @@ function setLink() {
 
 
 	var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
-	var element = document.getElementById("jb_player");
+	var element = document.getElementById("settingsMenu");
 	var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
 
 	if(!window.player) {
