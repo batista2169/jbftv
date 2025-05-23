@@ -26,9 +26,9 @@ function setLink() {
 //console.log(streams);
 
 
-	//var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
-	//var element = document.getElementById("jb_player");
-	//var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
+	var bradmaxPlayerConfig = {dataProvider:{source:[{url:n}]},autoplay:true};
+	var element = document.getElementById("jb_player");
+	var player = window.bradmax.player.create(element, bradmaxPlayerConfig);
 
 	if(!window.player) {
 		window.player = player;
@@ -40,8 +40,8 @@ function setLink() {
 	} else {
 		window.addEventListener('load', setLink);
 
-var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
-function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-var script = document.createElement('script');
-script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
-document.head.appendChild(script);
+//var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
+//function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+//var script = document.createElement('script');
+//script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+//document.head.appendChild(script);
