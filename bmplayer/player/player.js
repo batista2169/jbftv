@@ -11,7 +11,7 @@ function setLink() {
 		n = n[1];
 		alert(n);
 
-	if (n == "m3u8"){
+	//if (n == "m3u8"){
 	var streams = {
 		src: n,
 		type: 'application/x-mpegURL'
@@ -19,9 +19,9 @@ function setLink() {
 	video.src(streams);
 	video.load();
 	video.play();
-	}
+	//}
 
-var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
+//var streams = ["https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8","/error.m3u8"];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
