@@ -4,13 +4,7 @@
     JBF-TV Player - R.Santana/BA
 */
 
-function setLink() {	
-	var settingsMenu = document.getElementById("settingsMenu");
-	var n = window.location.href;
-		n = n.split('?source=');
-		n = n[1];
-		alert(n);
-}
+
 	//var url = '["'+ e +'","/error.m3u8"]';
 	//url = url[1];
 	//alert(url);
@@ -49,5 +43,11 @@ document.head.appendChild(script);
 		//window.addEventListener('load', setLink);
 		//}
 
-
+function setLink() {	
+	var settingsMenu = document.getElementById("settingsMenu");
+	var n = window.location.href;
+		n = n.split('?source=');
+		n = n[1];
+		alert(n);
+}
 
