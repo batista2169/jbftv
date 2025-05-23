@@ -21,7 +21,7 @@ function setLink() {
 	video.play();
 	}
 
-var streams = [e];
+var streams = ['e'];
 function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var script = document.createElement('script');
 script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
