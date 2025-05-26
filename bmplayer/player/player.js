@@ -5,17 +5,17 @@
 */
 
 function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-var e = window.location.href;
-	e = e.split('?source=');
-	e = e[1];
+var url = window.location.href;
+	url = url.split('?source=');
+	url = url[1];
+	alert(url);
+var e = '/error.m3u8';
 	alert(e);
-var p = '/error.m3u8';
-	alert(p);
 
 var script = document.createElement('script');
 script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-//var streams = [e,"/error.m3u8"];
-var streams = [e,p];
+//var streams = [url,"/error.m3u8"];
+var streams = [url,e];
 	
 
