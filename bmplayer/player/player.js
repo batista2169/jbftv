@@ -17,6 +17,8 @@ var e = window.location.href;
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
+var url = '["'+ e +'","/error.m3u8"]';
+alert(url);
 var script = document.createElement('script');
 script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
