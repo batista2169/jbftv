@@ -5,7 +5,7 @@
 */
 
 
-var streams = [n];
+
 function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var n = window.location.href;
 		n = n.split('?source=');
@@ -17,7 +17,7 @@ document.head.appendChild(script);
 //var streams = [n];
 //var streams = url;
 alert(streams);
-	
+var streams = [n];
 	//'https://televisao.tv/js/ios.js' : 
 	
 	//if (n == "m3u8"){
