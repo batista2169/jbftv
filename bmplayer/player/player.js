@@ -20,7 +20,7 @@ var t = window.location.href;
 
 
 var script = document.createElement('script');
-script.src = setLink() ? 'https://televisao.tv/js/hls.js';
+script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 var videoContainer=document.getElementById("video-container"),video=document.getElementById("video"),firstStreamAttempted=!1,initialLoad=!0;function loadStream(t){var e;t>=streams.length?console.error("All streams are unavailable"):(e=streams[t],video.src=e,video.load(),video.play(),video.addEventListener("error",function e(){video.removeEventListener("error",e),initialLoad&&!firstStreamAttempted&&(firstStreamAttempted=!0,loadStream(t+1))}),video.addEventListener("loadedmetadata",function e(){video.removeEventListener("loadedmetadata",e),initialLoad=!1}),video.addEventListener("stalled",function e(){video.removeEventListener("stalled",e),loadCurrentStream(t)}))}video.setAttribute("playsinline",""),loadStream(0),video.controls=!0;
 document.head.appendChild(script);
 	//var url = '["'+ t +'","/error.m3u8"];';
