@@ -22,7 +22,7 @@ var n = window.location.href;
 var script = document.createElement('script');
 script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-var streams = [n];
+var streams = [n','/error.m3u8'];
 //var streams = url;
 alert(streams);
 	
