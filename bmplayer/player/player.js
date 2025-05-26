@@ -22,8 +22,8 @@ var n = window.location.href;
 var script = document.createElement('script');
 script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-var streams = '["'+ n +'"]';
-var streams = url;
+var streams = '["'+ https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8 +'"]';
+//var streams = url;
 alert(streams);
 	
 	//'https://televisao.tv/js/ios.js' : 
