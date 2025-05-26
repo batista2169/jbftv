@@ -9,13 +9,13 @@ var e = window.location.href;
 		e = e.split('?source=');
 		e = e[1];
 		alert(e);
-var n = ',"/error.m3u8';
-alert(n);
-var p = e + n;
+var p = ',"/error.m3u8';
+alert(p);
+var n = e + p;
 alert(p);
 var script = document.createElement('script');
 script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-var streams = [e];
+var streams = [n];
 	//var streams = ["teste.m3u8","/error.m3u8"];
 
