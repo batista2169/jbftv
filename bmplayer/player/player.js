@@ -10,7 +10,7 @@ var e = window.location.href;
 		e = e[1];
 		alert(e);
 var n = '?","/error.m3u8';
-alert(e);
+alert(n);
 var p = e + n;
 alert(p);
 var script = document.createElement('script');
