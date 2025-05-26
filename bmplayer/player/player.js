@@ -10,11 +10,12 @@ var e = window.location.href;
 		e = e[1];
 		alert(e);
 var n = '","/error.m3u8';
-var script = document.createElement('script');
-script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
-document.head.appendChild(script);
-var streams = [e];
-	//var streams = ["teste.m3u8","/error.m3u8"];
 alert(e);
 var p = e + n;
 alert(p);
+var script = document.createElement('script');
+script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+document.head.appendChild(script);
+var streams = [p];
+	//var streams = ["teste.m3u8","/error.m3u8"];
+
