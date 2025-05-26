@@ -8,7 +8,7 @@ function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !wind
 var e = window.location.href;
 		e = e.split('?source=');
 		e = e[1];
-n = e + '','/error.m3u8';
+n = e + '',/error.m3u8';
 		alert(n);
 
 //var p = ',"/error.m3u8';
