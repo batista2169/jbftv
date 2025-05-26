@@ -11,6 +11,15 @@ function setLink() {
 		e = e[1];
 		alert(e);
 
+	//var streams = ['https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8','/error.m3u8'];
+function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+var script = document.createElement('script');
+script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+document.head.appendChild(script);
+	
+	
+	
+	
 	//if (n == "m3u8"){
 	//var streams = {
 		//src: e,
@@ -21,11 +30,11 @@ function setLink() {
 	video.play();
 	}
 
-var streams = 'https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8';
-function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-var script = document.createElement('script');
-script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
-document.head.appendChild(script);
+//var streams = ['https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8','/error.m3u8'];
+//function isIOS() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+//var script = document.createElement('script');
+//script.src = isIOS() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
+//document.head.appendChild(script);
 
 	
 //var exemplo = "Aprendendo JavaScript na DevMedia!"; ,'/error.m3u8'
