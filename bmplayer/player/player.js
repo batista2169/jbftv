@@ -8,9 +8,9 @@ function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !wind
 var url = window.location.href;
 	url = url.split('?source=');
 	url = url[1];
-	alert(url);
+	//alert(url);
 var e = '/error.m3u8';
-	alert(e);
+	//alert(e);
 
 var script = document.createElement('script');
 script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
