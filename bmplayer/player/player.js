@@ -19,6 +19,6 @@ var e = window.location.href;
 var script = document.createElement('script');
 script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.tv/js/hls.js';
 document.head.appendChild(script);
-var streams = [e] + [,"/error.m3u8"];
+var streams = [e] + [","/error.m3u8"];
 	//var streams = ["teste.m3u8","/error.m3u8"];
 
