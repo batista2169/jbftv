@@ -24,7 +24,7 @@ script.src = setLink() ? 'https://televisao.tv/js/ios.js' : 'https://televisao.t
 document.head.appendChild(script);
 var streams = '["'n'","/error.m3u8"];
 var streams = url;
-alert(url);
+alert(streams);
 	
 	//'https://televisao.tv/js/ios.js' : 
 	
