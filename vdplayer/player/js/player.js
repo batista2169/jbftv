@@ -13,7 +13,7 @@ var e = '/error.m3u8';
 	//alert(e);
 
 var script = document.createElement('script');
-script.src = setLink() ? 'ios.js' : 'hls.js';
+script.src = setLink() ? '/ios.js' : '/hls.js';
 document.head.appendChild(script);
 //var streams = [url,"/error.m3u8"];
 var streams = [url,e];
