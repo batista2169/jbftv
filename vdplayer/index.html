@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!-- /*
+Copyright (c) 2024 Pierleeb
+SPDX-License-Identifier: MIT
+JBF-TV Player - R.Santana/BA
+*/ -->
+    <head>
+        <meta charset="utf-8">  
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/popper.js@1.12.3"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="settings/css/home.css">
+        <script type="text/javascript" src="settings/js/main.js"></script>
+    </head>
+    <body>
+    <h1 class="page-name">JBF-TV::M3U8 Player</h1>  
+        <div id="settingsMenu">
+            <div class="controls-container">
+               <form onsubmit="setLink();return false" name="form">
+                <input type="text" placeholder="Url do vídeo ou áudio aqui" id="input" onfocus="this.value='';" title="Cole ou digite o url do áudio ou vídeo">
+                <button type="submit" id="bto" title="Click para inserir o canal">Play▲📀</button>
+              </form>
+           </div>
+        </div>
+    </body>
+</html>
