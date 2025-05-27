@@ -11,7 +11,7 @@ var url = window.location.href;
     //alert(url);
 var e = '/error.m3u8';
 var script = document.createElement('script');
-script.src = setLink() ? 'js/ios.js' : 'js/hls.js';
+script.src = setLink() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
 var streams = [url,e];
 //var streams = [url,"/error.m3u8"];
