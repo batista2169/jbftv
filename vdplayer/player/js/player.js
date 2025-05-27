@@ -11,7 +11,6 @@ var url = window.location.href;
 	//alert(url);
 var e = '/error.m3u8';
 	//alert(e);
-
 var script = document.createElement('script');
 script.src = setLink() ? 'js/ios.js' : 'js/hls.js';
 document.head.appendChild(script);
