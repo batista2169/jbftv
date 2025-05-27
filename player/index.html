@@ -4,10 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>JBF-TVPlayer</title>
-<body onLoad="setLink();">
+<body>
+     
 <script src='https://ssl.p.jwpcdn.com/player/v/8.6.2/jwplayer.js'></script>
 <script type="text/javascript">jwplayer.key="XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";</script>
-<div id="jb_player"></div>
+
 <script type="text/javascript">
        
 var jw = document.getElementById('jb_player');
@@ -30,8 +31,8 @@ var url = window.location.href;
 url = url.split('?source=');
 url = url[1];
 //alert(url);
-                    var teste = 'https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8';
-                    alert(teste);
+var teste = 'https://tv03.zas.media:1936/rftv/rftv/playlist.m3u8';
+                    
 sources = { file: teste };
 jwplayer().load(sources);
 jwplayer().play(true);
