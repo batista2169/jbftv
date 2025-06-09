@@ -13,10 +13,7 @@ var script = document.createElement('script');
 script.src = Link() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
 //var streams = [url];
-var video = document.getElementById("video");
-var input = document.getElementById("input");
-var inputText = input.value;
-var e = input.value;
+
 var streams = [e,"/error.m3u8"];
 
 function setLink(){
@@ -30,6 +27,10 @@ var inputText = input.value;
 
 		window.alert('Canal ' + inputText + ' inserido com sucesso!');
 		localStorage.setItem("input",document.getElementById("input").value);
+		var video = document.getElementById("video");
+var input = document.getElementById("input");
+var inputText = input.value;
+var e = input.value;
 		location.reload(); 
 
 		}
