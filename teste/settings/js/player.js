@@ -21,13 +21,13 @@ var inputText = input.value;
 		//location.reload(); 
 
 		}
-}
-
-function Link() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 	var video = document.getElementById("video");
 var input = document.getElementById("input");
 var inputText = input.value;
-var e = input.value;	}
+var e = input.value;
+}
+
+function Link() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 //var t = '/error.m3u8';
 var script = document.createElement('script');
 script.src = Link() ? 'settings/js/ios.js' : 'settings/js/hls.js';
