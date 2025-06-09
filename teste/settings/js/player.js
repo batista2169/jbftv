@@ -25,9 +25,7 @@ var inputText = input.value;
 
 
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
-let settingsMenu = document.getElementById("settingsMenu");
-let input = document.getElementById("input");
-let inputText = input.value;
+var input = document.getElementById("input");
 var inputText = input.value;
     u = input.value;
    // u = u[1];
