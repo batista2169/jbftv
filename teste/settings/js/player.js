@@ -27,7 +27,7 @@ var inputText = input.value;
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var inputText = input.value;
     e = input.value;
-    e = e[1];
+   // e = e[1];
     alert(e);
 var e = '/error.m3u8';
 var script = document.createElement('script');
