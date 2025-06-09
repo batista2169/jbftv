@@ -26,14 +26,14 @@ var inputText = input.value;
 
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var inputText = input.value;
-    e = input.value;
-   // e = e[1];
-    alert(e);
+    u = input.value;
+   // u = u[1];
+    alert(u);
 var e = '/error.m3u8';
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
-var streams = [e];
+var streams = [u,e];
 //var streams = [url,"/error.m3u8"];
 
 //function Link() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
