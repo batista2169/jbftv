@@ -25,11 +25,13 @@ var inputText = input.value;
 
 
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+var video = document.getElementById("video");
+var input = document.getElementById("input");
 var inputText = input.value;
     u = input.value;
    // u = u[1];
     alert(u);
-//localStorage.setItem("input",document.getElementById("input").value);
+
 var e = '/error.m3u8';
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
