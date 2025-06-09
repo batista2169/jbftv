@@ -17,14 +17,13 @@ var inputText = input.value;
 
 		window.alert('Canal ' + inputText + ' inserido com sucesso!');
 		localStorage.setItem("input",document.getElementById("input").value);
-		
-		//location.reload(); 
-
-		}
-	var video = document.getElementById("video");
+		var video = document.getElementById("video");
 var input = document.getElementById("input");
 var inputText = input.value;
 var e = input.value;
+		//location.reload(); 
+
+		}
 }
 
 function Link() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
