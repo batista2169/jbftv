@@ -32,7 +32,7 @@ var inputText = input.value;
    // u = u[1];
     alert(u);
 
-var e = '/error.m3u8';
+//var e = '/error.m3u8';
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
