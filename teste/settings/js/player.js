@@ -6,7 +6,7 @@
 function Carregar(){
 	document.getElementById("input").value = localStorage.getItem("input");
 	}
-function setLin(){
+function setLink(){
 var input = document.form.input;
 var inputText = input.value;
 	if (input.value == ""){
@@ -24,14 +24,14 @@ var inputText = input.value;
 }
 
 
-function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 var inputText = input.value;
     e = input.value;
     e = e[1];
     alert(e);
 var e = '/error.m3u8';
 var script = document.createElement('script');
-script.src = setLink() ? 'settings/js/ios.js' : 'settings/js/hls.js';
+script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
 var streams = [e];
 //var streams = [url,"/error.m3u8"];
