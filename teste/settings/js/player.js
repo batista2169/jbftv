@@ -20,6 +20,7 @@ var inputText = input.value;
   const input = document.querySelector("#input").value;
   localStorage.setItem("arquivo1", input);
   console.log(input);
+		alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
 		//window.location.reload();
 		//setTimeout(function (setLin) {
        // location.reload()
@@ -45,6 +46,7 @@ var streams = [u];
 
 function play() {    
     setTimeout(function () {
+	    
 	    alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
         //location.reload()
     }, 100);
