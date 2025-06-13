@@ -49,7 +49,7 @@ document.head.appendChild(script);
 //var streams = [url,"/error.m3u8"];
 
 function play() {    
-    setTimeout(function () {	   
+    setLin(function () {	   
 	    alert("O valor guardado e: " + localStorage.getItem("link"))
     }, 100);
 }
