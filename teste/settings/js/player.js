@@ -6,7 +6,7 @@
 //function Carregar(){
 	//document.getElementById("input").value = localStorage.getItem("input");
 	//}
-//function setLink(){
+function setLink(){
 //var input = document.form.input;
 //var inputText = input.value;
 	//if (input.value == ""){
@@ -17,12 +17,12 @@
 
 		//window.alert('Canal ' + inputText + ' inserido com sucesso!');
 		//localStorage.setItem("input",document.getElementById("input").value);
- // const input = document.querySelector("#input").value;
-//  localStorage.setItem("link", input);
- // console.log(input);
-		//alert("O valor guardado e: " + localStorage.getItem("link"))
+  const input = document.querySelector("#input").value;
+  localStorage.setItem("link", input);
+  console.log(input);
+		alert("O valor guardado e: " + localStorage.getItem("link"))
 
-		//var u = window.localStorage.getItem('link'); 
+		var u = window.localStorage.getItem('link'); 
 
 
 		//window.location.reload();
@@ -41,17 +41,17 @@
 
 		
 		//}
-//}
+}
 const input = document.querySelector("#input").value;
   localStorage.setItem("link", input);
   console.log(input);
   alert("O valor guardado e: " + localStorage.getItem("link"))
   var u = window.localStorage.getItem('link');
 var streams = [u];
-function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 //var e = '/error.m3u8';
 var script = document.createElement('script');
-script.src = setLink() ? 'settings/js/ios.js' : 'settings/js/hls.js';
+script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
 //var streams = [url,"/error.m3u8"];
 
