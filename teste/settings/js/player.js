@@ -16,8 +16,10 @@ var inputText = input.value;
 	}else {
 
 		window.alert('Canal ' + inputText + ' inserido com sucesso!');
-		localStorage.setItem("input",document.getElementById("input").value);
-		alert(localStorage.setItem('arquivo1', document.body.input.value));
+		//localStorage.setItem("input",document.getElementById("input").value);
+  const input = document.querySelector("#input").value;
+  localStorage.setItem("arquivo1", input);
+  console.log(input);
 		//window.location.reload();
 		//setTimeout(function (setLin) {
        // location.reload()
