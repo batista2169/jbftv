@@ -28,7 +28,7 @@ var inputText = input.value;
        // location.reload()
     //}, 1000); .split(",")
 alert(u);
-		//location.reload()
+		location.reload()
 
 video.src=u
 video.load()
