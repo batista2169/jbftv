@@ -32,7 +32,7 @@ function setLink(){
 
 
 //alert(u);
-		//location.reload()
+		location.reload()
 
 //video.src=u
 //video.load()
