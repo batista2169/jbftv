@@ -41,7 +41,7 @@ var inputText = input.value;
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
-var streams = [u];
+var streams = [arquivo1];
 //var streams = [url,"/error.m3u8"];
 
 function play() {    
