@@ -33,7 +33,7 @@ function setLink(){
 
 //alert(u);
 		location.reload()
-
+localStorage.setItem("input",document.getElementById("input").value);
 //video.src=u
 //video.load()
 //video.play()
