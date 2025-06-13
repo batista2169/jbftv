@@ -46,7 +46,7 @@ var streams = [u];
 
 function play() {    
     setTimeout(function () {
-	    
+	var pessoaAntiga = window.localStorage.getItem('pessoa').split(",");    
 	    alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
         //location.reload()
     }, 100);
