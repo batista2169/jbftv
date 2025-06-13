@@ -18,11 +18,11 @@ var inputText = input.value;
 		window.alert('Canal ' + inputText + ' inserido com sucesso!');
 		//localStorage.setItem("input",document.getElementById("input").value);
   const input = document.querySelector("#input").value;
-  localStorage.setItem("arquivo1", input);
+  localStorage.setItem("link", input);
   console.log(input);
-		alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
+		alert("O valor guardado e: " + localStorage.getItem("link"))
 
-		var u = window.localStorage.getItem('arquivo1'); 
+		var u = window.localStorage.getItem('link'); 
 		//window.location.reload();
 		//setTimeout(function (setLin) {
        // location.reload()
@@ -32,10 +32,10 @@ alert(u);
 		}
 }
 const input = document.querySelector("#input").value;
-  localStorage.setItem("arquivo1", input);
+  localStorage.setItem("link", input);
   console.log(input);
-  alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
-  var u = window.localStorage.getItem('arquivo1');
+  alert("O valor guardado e: " + localStorage.getItem("link"))
+  var u = window.localStorage.getItem('link');
 var streams = [u];
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 //var e = '/error.m3u8';
@@ -46,6 +46,6 @@ document.head.appendChild(script);
 
 function play() {    
     setTimeout(function () {	   
-	    alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
+	    alert("O valor guardado e: " + localStorage.getItem("link"))
     }, 100);
 }
