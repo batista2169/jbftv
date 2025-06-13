@@ -48,10 +48,10 @@ const input = document.querySelector("#input").value;
   alert("O valor guardado e: " + localStorage.getItem("link"))
   var u = window.localStorage.getItem('link');
 var streams = [u];
-function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+function setLink() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 //var e = '/error.m3u8';
 var script = document.createElement('script');
-script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
+script.src = setLink() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
 //var streams = [url,"/error.m3u8"];
 
