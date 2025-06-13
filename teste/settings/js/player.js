@@ -29,6 +29,10 @@ var inputText = input.value;
     //}, 1000); .split(",")
 alert(u);
 		location.reload()
+
+video.src=u
+video.load()
+video.play()
 		}
 }
 const input = document.querySelector("#input").value;
