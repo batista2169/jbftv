@@ -21,10 +21,12 @@ var inputText = input.value;
   localStorage.setItem("arquivo1", input);
   console.log(input);
 		alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
+
+		var u = window.localStorage.getItem('arquivo1'); 
 		//window.location.reload();
 		//setTimeout(function (setLin) {
        // location.reload()
-    //}, 1000);
+    //}, 1000); .split(",")
 
 		}
 }
@@ -32,8 +34,8 @@ var inputText = input.value;
 
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 
-var inputText = input.value;
-    u = input.value;
+//var inputText = input.value;
+  //  u = input.value;
    // u = u[1];
    // alert(u);
 
@@ -46,8 +48,8 @@ var streams = [arquivo1];
 
 function play() {    
     setTimeout(function () {
-	var pessoaAntiga = window.localStorage.getItem('pessoa').split(",");    
+	   
 	    alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
-        //location.reload()
+        location.reload()
     }, 100);
 }
