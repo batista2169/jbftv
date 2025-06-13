@@ -17,7 +17,7 @@ var inputText = input.value;
 
 		window.alert('Canal ' + inputText + ' inserido com sucesso!');
 		localStorage.setItem("input",document.getElementById("input").value);
-		
+		alert(localStorage.setItem('arquivo1', document.body.input.value));
 		//window.location.reload();
 		//setTimeout(function (setLin) {
        // location.reload()
@@ -32,7 +32,7 @@ function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !windo
 var inputText = input.value;
     u = input.value;
    // u = u[1];
-    alert(u);
+   // alert(u);
 
 //var e = '/error.m3u8';
 var script = document.createElement('script');
@@ -43,6 +43,7 @@ var streams = [u];
 
 function play() {    
     setTimeout(function () {
-        location.reload()
+	    alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
+        //location.reload()
     }, 100);
 }
