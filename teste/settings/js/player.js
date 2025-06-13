@@ -32,29 +32,22 @@ alert(u);
 		}
 }
 
-
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 const input = document.querySelector("#input").value;
   localStorage.setItem("arquivo1", input);
   console.log(input);
-		alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
+  alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
+  var u = window.localStorage.getItem('arquivo1');
 
-		var u = window.localStorage.getItem('arquivo1'); 
-//var inputText = input.value;
-  //  u = input.value;
-   // u = u[1];
-   // alert(u); 
+var streams = [u];
 //var e = '/error.m3u8';
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
-var streams = [u];
 //var streams = [url,"/error.m3u8"];
 
 function play() {    
-    setTimeout(function () {
-	   
-	    //alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
-       
+    setTimeout(function () {	   
+	    alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
     }, 100);
 }
