@@ -33,7 +33,12 @@ alert(u);
 
 
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
+const input = document.querySelector("#input").value;
+  localStorage.setItem("arquivo1", input);
+  console.log(input);
+		alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
 
+		var u = window.localStorage.getItem('arquivo1'); 
 //var inputText = input.value;
   //  u = input.value;
    // u = u[1];
