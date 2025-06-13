@@ -43,13 +43,13 @@ function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !windo
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
 document.head.appendChild(script);
-var streams = [arquivo1];
+var streams = [u];
 //var streams = [url,"/error.m3u8"];
 
 function play() {    
     setTimeout(function () {
 	   
-	    alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
+	    //alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
         location.reload()
     }, 100);
 }
