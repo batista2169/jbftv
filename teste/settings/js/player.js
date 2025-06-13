@@ -19,7 +19,7 @@ var inputText = input.value;
 		localStorage.setItem("input",document.getElementById("input").value);
 		
 		//window.location.reload();
-		setTimeout(function () {
+		setTimeout(function (setLin) {
         location.reload()
     }, 1000);
 
