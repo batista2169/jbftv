@@ -28,16 +28,16 @@ var inputText = input.value;
        // location.reload()
     //}, 1000); .split(",")
 alert(u);
-		location.reload()
+		//location.reload()
 
 video.src=u
 video.load()
 video.play()
-const input = document.querySelector("#input").value;
-  localStorage.setItem("link", input);
-  console.log(input);
-  alert("O valor guardado e: " + localStorage.getItem("link"))
-  var u = window.localStorage.getItem('link');
+//const input = document.querySelector("#input").value;
+ // localStorage.setItem("link", input);
+ // console.log(input);
+ // alert("O valor guardado e: " + localStorage.getItem("link"))
+ // var u = window.localStorage.getItem('link');
 var streams = [u];
 		
 		}
