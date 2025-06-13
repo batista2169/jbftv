@@ -27,7 +27,7 @@ var inputText = input.value;
 		//setTimeout(function (setLin) {
        // location.reload()
     //}, 1000); .split(",")
-
+alert(u);
 		}
 }
 
