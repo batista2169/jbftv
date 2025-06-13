@@ -31,15 +31,13 @@ alert(u);
 		location.reload()
 		}
 }
-
-function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 const input = document.querySelector("#input").value;
   localStorage.setItem("arquivo1", input);
   console.log(input);
   alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
   var u = window.localStorage.getItem('arquivo1');
-
 var streams = [u];
+function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 //var e = '/error.m3u8';
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
