@@ -38,11 +38,11 @@ video.play()
  // console.log(input);
  // alert("O valor guardado e: " + localStorage.getItem("link"))
  // var u = window.localStorage.getItem('link');
-var streams = [u];
+
 		
 		}
 }
-
+var streams = [u];
 function setLin() {return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;}
 //var e = '/error.m3u8';
 var script = document.createElement('script');
