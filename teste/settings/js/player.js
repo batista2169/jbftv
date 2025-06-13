@@ -43,7 +43,7 @@ const input = document.querySelector("#input").value;
   //  u = input.value;
    // u = u[1];
    // alert(u);
-
+ location.reload()
 //var e = '/error.m3u8';
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
@@ -55,6 +55,6 @@ function play() {
     setTimeout(function () {
 	   
 	    //alert("O valor guardado e: " + localStorage.getItem("arquivo1"))
-        location.reload()
+       
     }, 100);
 }
