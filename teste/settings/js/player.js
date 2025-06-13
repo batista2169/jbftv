@@ -28,6 +28,7 @@ var inputText = input.value;
        // location.reload()
     //}, 1000); .split(",")
 alert(u);
+		location.reload()
 		}
 }
 
@@ -42,8 +43,7 @@ const input = document.querySelector("#input").value;
 //var inputText = input.value;
   //  u = input.value;
    // u = u[1];
-   // alert(u);
- location.reload()
+   // alert(u); 
 //var e = '/error.m3u8';
 var script = document.createElement('script');
 script.src = setLin() ? 'settings/js/ios.js' : 'settings/js/hls.js';
