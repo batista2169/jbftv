@@ -19,9 +19,9 @@ var inputText = input.value;
 		localStorage.setItem("input",document.getElementById("input").value);
 		
 		//window.location.reload();
-		setTimeout(function (setLin) {
-        location.reload()
-    }, 1000);
+		//setTimeout(function (setLin) {
+       // location.reload()
+    //}, 1000);
 
 		}
 }
@@ -41,8 +41,8 @@ document.head.appendChild(script);
 var streams = [u];
 //var streams = [url,"/error.m3u8"];
 
-//function refresh() {    
-    //setTimeout(function () {
-        //location.reload()
-    //}, 100);
-//}
+function play() {    
+    setTimeout(function () {
+        location.reload()
+    }, 100);
+}
