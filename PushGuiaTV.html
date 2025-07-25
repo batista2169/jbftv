@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/ + nome
+
+
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinal Publico - Assista aos Melhores Canais ao Vivo Gratuitos</title>
+    <meta name="description" content="Assista aos melhores canais ao vivo gratuitos no Sinal Publico. Desfrute de uma variedade de programação, incluindo notícias, esportes e entretenimento.">
+    <meta name="description" content="Novo site para assistir tv online grátis, futebol ao vivo e muito mais!" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Novo site para assistir tv online grátis, futebol ao vivo e muito mais!" />
+    <meta name="keywords" content="Sinal Publico, canais ao vivo, transmissão ao vivo, TV online, esportes ao vivo , TV GRATIS AO VIVO">
+    <link rel="stylesheet" href="css/all.min.css">
+     
+    <link rel="stylesheet" href="css/menusmartv.css">
+</head>
+<body onload="inicializarApp()">
+  <div class="app-container">
+    <div class="sidebar">
+      <img src="imagens/iconpage.png" alt="Sinal Publico">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Pesquisar Canal" oninput="filtrarCanais()" />
+      </div>
+      <div class="channel-list" id="channelList">Carregando</div>
+    </div>
+
+    <div class="main-content">
+      <div class="video-player">
+        <iframe id="playerFrame" allow="encrypted-media" allowfullscreen></iframe>
+      </div>
+    
+      <div class="program-info" id="programInfo">
+        <h2>Selecione um canal</h2>
+        <p>Programação.</p>
+<title>Programação Telecine Cult</title>
+      </div>
+    </div>
+  </div>
+
+<script>
+function extrairFrases(url, selector) {
+  return fetch(url)
+    .then(response => response.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const elementos = doc.querySelectorAll(selector);
+      const frases = Array.from(elementos).map(elemento => elemento.textContent);
+      return frases;
+    })
+    .catch(error => {
+      console.error('Erro ao obter a página:', error);
+      return [];
+    });
+}
+
+// Uso:
+const urlAlvo = 'https://meuguia.tv/programacao/canal/TC5';
+const seletorCSS = 'h2'; // Exemplo: extrair texto de todos os parágrafos
+
+extrairFrases(urlAlvo, seletorCSS)
+  .then(frases => {
+    console.log('Frases extraídas:', frases);
+    // Aqui você pode exibir as frases na sua página, por exemplo:
+    const elementoAlvo = document.getElementById('resultado');
+    if (elementoAlvo) {
+      elementoAlvo.innerHTML = frases.join('<br>');
+    }
+  });
+
+ </script>
+
+</body>
+</html>
