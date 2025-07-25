@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinal Publico - Assista aos Melhores Canais ao Vivo Gratuitos</title>
+    <meta name="description" content="Assista aos melhores canais ao vivo gratuitos no Sinal Publico. Desfrute de uma variedade de programação, incluindo notícias, esportes e entretenimento.">
+    <meta name="description" content="Novo site para assistir tv online grátis, futebol ao vivo e muito mais!" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Novo site para assistir tv online grátis, futebol ao vivo e muito mais!" />
+    <meta name="keywords" content="Sinal Publico, canais ao vivo, transmissão ao vivo, TV online, esportes ao vivo , TV GRATIS AO VIVO">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/ccee9ace0a.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://sinalpublico.vercel.app/css/menusmartv.css">
+</head>
+<body onload="inicializarApp()">
+  <div class="app-container">
+    <div class="sidebar">
+      <img src="/imgs/iconpage.png" alt="Sinal Publico">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Pesquisar Canal" oninput="filtrarCanais()" />
+      </div>
+      <div class="channel-list" id="channelList">Carregando</div>
+    </div>
+
+    <div class="main-content">
+      <div class="video-player">
+        <iframe id="playerFrame" allow="encrypted-media" allowfullscreen></iframe>
+      </div>
+    
+      <div class="program-info" id="programInfo">
+        <h2>Selecione um canal</h2>
+        <p>Programação.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  const URL_JSON = "https://sinalpublico.vercel.app/channels.json";
+  let canais = [];
+  let programacao = [];
+
+  function normalizarNome(nome) {
+    return nome.toLowerCase().replace(/[^a-z0-9]/gi, "");
+  }
+
+  async function inicializarApp() {
+    await carregarCanais();
+    await fetchProgramacao();
+  }
+
+  async function carregarCanais() {
+    try {
+      const res = await fetch(URL_JSON);
+      canais = await res.json();
+      renderizarListaCanais(canais);
+    } catch (e) {
+      document.getElementById("channelList").innerHTML = "Erro ao carregar canais.";
+    }
+  }
+
+  function renderizarListaCanais(lista) {
+    const container = document.getElementById("channelList");
+    container.innerHTML = "";
+
+    lista.forEach((canal, index) => {
+      const item = document.createElement("div");
+      item.className = "channel-item";
+      item.textContent = canal.name;
+      item.onclick = () => selecionarCanal(canal, index);
+      container.appendChild(item);
+    });
+  }
+
+  function filtrarCanais() {
+    const termo = document.getElementById("searchInput").value.toLowerCase();
+    const canaisFiltrados = canais.filter(c => c.name.toLowerCase().includes(termo));
+    renderizarListaCanais(canaisFiltrados);
+  }
+
+  async function fetchProgramacao() {
+    const categorias = [
+      "Aberta", "Esportes", "Series", "Infantil",
+      "Variedades", "Documentarios", "Noticias", "Filmes"
+    ];
+
+    for (const nome of categorias) {
+      const url = "https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/" + nome;
+
+      try {
+        const res = await fetch(url);
+        const html = await res.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+        const blocos = doc.querySelectorAll("a.devicepadding");
+
+        blocos.forEach(bloco => {
+          const nomeCanal = bloco.querySelector("h2")?.textContent.trim() || "Desconhecido";
+          const h3s = bloco.querySelectorAll("h3");
+          const programas = [];
+
+          h3s.forEach(h3 => {
+            const horario = h3.querySelector("strong")?.textContent.trim() || "";
+            const titulo = h3.textContent.replace(horario, "").trim();
+            if (horario && titulo) {
+              programas.push({ horario, titulo });
+            }
+          });
+
+          if (!programacao.find(p => normalizarNome(p.nome) === normalizarNome(nomeCanal))) {
+            programacao.push({ nome: nomeCanal, programas });
+          }
+        });
+      } catch (e) {
+        console.error(`Erro na categoria ${nome}:`, e);
+      }
+    }
+  }
+
+  function selecionarCanal(canal, index) {
+    document.getElementById("playerFrame").src = canal.url;
+    const nomeCanal = normalizarNome(canal.name);
+    const canalEPG = programacao.find(c => normalizarNome(c.nome).includes(nomeCanal));
+    const info = document.getElementById("programInfo");
+
+    if (canalEPG && canalEPG.programas.length > 0) {
+      let html = `<h2>${canalEPG.nome}</h2>`;
+      canalEPG.programas.forEach(p => {
+        html += `<div><strong>${p.horario}</strong> - ${p.titulo}</div>`;
+      });
+      info.innerHTML = html;
+    } else {
+      info.innerHTML = `<h2>${canal.name}</h2><p>Programação não encontrada.</p>`;
+    }
+
+    document.querySelectorAll(".channel-item").forEach((el, i) => {
+      el.classList.toggle("active", i === index);
+    });
+  }
+
+  window.onload = inicializarApp;
+  </script>
+</body>
+</html>
