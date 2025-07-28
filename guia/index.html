@@ -85,35 +85,28 @@ https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/ + nome
     renderizarListaCanais(canaisFiltrados);
   }
     
-function extrairFrases(url, selector) {
-  return fetch(url)
-    .then(response => response.text())
-    .then(html => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const elementos = doc.querySelectorAll(selector);
-      const frases = Array.from(elementos).map(elemento => elemento.textContent);
-      return frases;
-    })
-    .catch(error => {
-      console.error('Erro ao obter a página:', error);
-      return [];
-    });
+async function getTitleFromURL(url) {
+  try {
+    const response = await fetch(url);
+    const html = await response.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const title = doc.querySelector('title')?.textContent;
+    return title || 'Título não encontrado';
+  } catch (error) {
+    console.error('Erro ao obter o título:', error);
+    return 'Erro ao obter o título';
+  }
 }
 
-// Uso:
-const urlAlvo = 'https://meuguia.tv/programacao/canal/TC5';
-const seletorCSS = 'h2'; // Exemplo: extrair texto de todos os parágrafos
-
-extrairFrases(urlAlvo, seletorCSS)
-  .then(frases => {
-    console.log('Frases extraídas:', frases);
-    // Aqui você pode exibir as frases na sua página, por exemplo:
-    const elementoAlvo = document.getElementById('resultado');
-    if (elementoAlvo) {
-      elementoAlvo.innerHTML = frases.join('<br>');
-    }
+// Exemplo de uso:
+const url = 'https://meuguia.tv/programacao/canal/TC5'; // Substitua pela URL desejada
+getTitleFromURL(url)
+  .then(title => {
+    console.log(`Título da página: ${title}`);
   });
+
+
 window.onload = inicializarApp;
  </script>
 
