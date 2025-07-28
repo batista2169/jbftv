@@ -1,0 +1,94 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    .app-container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #111;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar h1 {
+      font-size: 18px;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid #333;
+    }
+    .search-box {
+      padding: 10px 20px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+    }
+    .channel-list {
+      flex: 1;
+      overflow-y: auto;
+    }
+    .channel-item {
+      padding: 15px 20px;
+      border-bottom: 1px solid #222;
+      cursor: pointer;
+      color: white;
+    }
+    .channel-item:hover,
+    .channel-item.active {
+      background-color: #008B8B;
+    }
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: #121212;
+      padding: 20px;
+    }
+    .video-player {
+      height: 60%;
+      background-color: black;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .video-player iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      border: none;
+    }
+    .video-controls {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+    .video-controls span {
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .program-info {
+      background-color: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-y: auto;
+      height: 30%;
+    }
+    .program-info h2 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+    .program-info div {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .program-info strong {
+      color: #00bfff;
+    }
