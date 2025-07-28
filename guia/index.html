@@ -92,7 +92,7 @@ async function fetchProgramacao() {
     ];
 
     for (const nome of categorias) {
-      const url = "https://meuguia.tv/programacao/canal/" + GRD;
+      const url = "https://meuguia.tv/" + nome;
 
       try {
         const res = await fetch(url);
