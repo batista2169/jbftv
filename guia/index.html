@@ -43,6 +43,48 @@ https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/ + nome
   </div>
 
 <script>
+    const URL_JSON = "https://sinalpublico.vercel.app/channels.json";
+  let canais = [];
+  let programacao = [];
+
+  function normalizarNome(nome) {
+    return nome.toLowerCase().replace(/[^a-z0-9]/gi, "");
+  }
+
+  async function inicializarApp() {
+    await carregarCanais();
+    await fetchProgramacao();
+  }
+
+  async function carregarCanais() {
+    try {
+      const res = await fetch(URL_JSON);
+      canais = await res.json();
+      renderizarListaCanais(canais);
+    } catch (e) {
+      document.getElementById("channelList").innerHTML = "Erro ao carregar canais.";
+    }
+  }
+
+  function renderizarListaCanais(lista) {
+    const container = document.getElementById("channelList");
+    container.innerHTML = "";
+
+    lista.forEach((canal, index) => {
+      const item = document.createElement("div");
+      item.className = "channel-item";
+      item.textContent = canal.name;
+      item.onclick = () => selecionarCanal(canal, index);
+      container.appendChild(item);
+    });
+  }
+
+  function filtrarCanais() {
+    const termo = document.getElementById("searchInput").value.toLowerCase();
+    const canaisFiltrados = canais.filter(c => c.name.toLowerCase().includes(termo));
+    renderizarListaCanais(canaisFiltrados);
+  }
+    
 function extrairFrases(url, selector) {
   return fetch(url)
     .then(response => response.text())
