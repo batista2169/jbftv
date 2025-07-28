@@ -85,34 +85,67 @@ https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/ + nome
     renderizarListaCanais(canaisFiltrados);
   }
     
-async function obterProgramacao() {
-  try {
-    // 1. Acessar a página
-    const response = await fetch('https://meuguia.tv/programacao/canal/TC5');
-    const html = await response.text();
+async function fetchProgramacao() {
+    const categorias = [
+      "Aberta", "Esportes", "Series", "Infantil",
+      "Variedades", "Documentarios", "Noticias", "Filmes"
+    ];
 
-    // 2. Analisar o HTML
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
+    for (const nome of categorias) {
+      const url = "https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/" + nome;
 
-    // 3. Extrair os dados (exemplo: títulos de programas)
-    const programas = [];
-    const elementosProgramas = doc.querySelectorAll('.licontent'); // Substitua pela classe real
-    elementosProgramas.forEach(elemento => {
-      programas.push(elemento.textContent);
-    });
+      try {
+        const res = await fetch(url);
+        const html = await res.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+        const blocos = doc.querySelectorAll("a.devicepadding");
 
-    // 4. Exibir ou usar os dados
-    console.log(programas);
-    // Aqui você pode exibir os dados na sua interface ou usá-los como desejar
-  } catch (error) {
-    console.error('Erro ao obter a programação:', error);
+        blocos.forEach(bloco => {
+          const nomeCanal = bloco.querySelector("h2")?.textContent.trim() || "Desconhecido";
+          const h3s = bloco.querySelectorAll("h3");
+          const programas = [];
+
+          h3s.forEach(h3 => {
+            const horario = h3.querySelector("strong")?.textContent.trim() || "";
+            const titulo = h3.textContent.replace(horario, "").trim();
+            if (horario && titulo) {
+              programas.push({ horario, titulo });
+            }
+          });
+
+          if (!programacao.find(p => normalizarNome(p.nome) === normalizarNome(nomeCanal))) {
+            programacao.push({ nome: nomeCanal, programas });
+          }
+        });
+      } catch (e) {
+        console.error(`Erro na categoria ${nome}:`, e);
+      }
+    }
   }
-}
 
-obterProgramacao();
+  function selecionarCanal(canal, index) {
+    document.getElementById("playerFrame").src = canal.url;
+    const nomeCanal = normalizarNome(canal.name);
+    const canalEPG = programacao.find(c => normalizarNome(c.nome).includes(nomeCanal));
+    const info = document.getElementById("programInfo");
 
-window.onload = inicializarApp;
+    if (canalEPG && canalEPG.programas.length > 0) {
+      let html = `<h2>${canalEPG.nome}</h2>`;
+      canalEPG.programas.forEach(p => {
+        html += `<div><strong>${p.horario}</strong> - ${p.titulo}</div>`;
+      });
+      info.innerHTML = html;
+    } else {
+      info.innerHTML = `<h2>${canal.name}</h2><p>Programação não encontrada.</p>`;
+    }
+
+    document.querySelectorAll(".channel-item").forEach((el, i) => {
+      el.classList.toggle("active", i === index);
+    });
+  }
+
+  window.onload = inicializarApp;
  </script>
 
 </body>
