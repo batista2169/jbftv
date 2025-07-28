@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/ + nome
+
+
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinal Publico - Assista aos Melhores Canais ao Vivo Gratuitos</title>
+    <meta name="description" content="Assista aos melhores canais ao vivo gratuitos no Sinal Publico. Desfrute de uma variedade de programação, incluindo notícias, esportes e entretenimento.">
+    <meta name="description" content="Novo site para assistir tv online grátis, futebol ao vivo e muito mais!" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Novo site para assistir tv online grátis, futebol ao vivo e muito mais!" />
+    <meta name="keywords" content="Sinal Publico, canais ao vivo, transmissão ao vivo, TV online, esportes ao vivo , TV GRATIS AO VIVO">
+    <link rel="stylesheet" href="all.min.css">
+     
+    <link rel="stylesheet" href="menusmartv.css">
+</head>
+<body onload="acessarConteudo()">
+  <div class="app-container">
+    <div class="sidebar">
+      <img src="iconpage.png" alt="Sinal Publico">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Pesquisar Canal" oninput="filtrarCanais()" />
+      </div>
+      <div class="channel-list" id="channelList">Carregando</div>
+    </div>
+
+    <div class="main-content">
+      <div class="video-player">
+        <iframe id="playerFrame" allow="encrypted-media" allowfullscreen></iframe>
+      </div>
+    
+      <div class="program-info" id="programInfo">
+        <h2>Selecione um canal</h2>
+        <p>Programação.</p>
+<title>Programação Telecine Cult</title>
+      </div>
+    </div>
+  </div>
+
+<script>
+async function acessarConteudo() {
+  try {
+    const response = await fetch('https://meuguia.tv'); // Substitua pela URL desejada
+    const html = await response.text();
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+
+    // Exemplo: Obter o título da página
+    const titulo = doc.querySelector('h2').innerText;
+    console.log('Título da página:', titulo);
+
+    // Exemplo: Obter todos os parágrafos
+    const paragrafos = doc.querySelectorAll('h3');
+    paragrafos.forEach(paragrafo => {
+      console.log(paragrafo.innerText);
+    });
+
+  } catch (error) {
+    console.error('Erro ao acessar o conteúdo:', error);
+  }
+}
+
+  window.onload = acessarConteudo;
+ </script>
+
+</body>
+</html>
