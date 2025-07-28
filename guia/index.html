@@ -85,27 +85,32 @@ https://d1r94zrwa3gnlo-cloudfront.vercel.app/host/m/ + nome
     renderizarListaCanais(canaisFiltrados);
   }
     
-async function getTitleFromURL(url) {
+async function obterProgramacao() {
   try {
-    const response = await fetch(url);
+    // 1. Acessar a página
+    const response = await fetch('https://meuguia.tv/programacao/canal/TC5');
     const html = await response.text();
+
+    // 2. Analisar o HTML
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
-    const title = doc.querySelector('title')?.textContent;
-    return title || 'Título não encontrado';
+
+    // 3. Extrair os dados (exemplo: títulos de programas)
+    const programas = [];
+    const elementosProgramas = doc.querySelectorAll('.licontent'); // Substitua pela classe real
+    elementosProgramas.forEach(elemento => {
+      programas.push(elemento.textContent);
+    });
+
+    // 4. Exibir ou usar os dados
+    console.log(programas);
+    // Aqui você pode exibir os dados na sua interface ou usá-los como desejar
   } catch (error) {
-    console.error('Erro ao obter o título:', error);
-    return 'Erro ao obter o título';
+    console.error('Erro ao obter a programação:', error);
   }
 }
 
-// Exemplo de uso:
-const url = 'https://meuguia.tv/programacao/canal/TC5'; // Substitua pela URL desejada
-getTitleFromURL(url)
-  .then(title => {
-    console.log(`Título da página: ${title}`);
-  });
-
+obterProgramacao();
 
 window.onload = inicializarApp;
  </script>
