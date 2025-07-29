@@ -1,0 +1,561 @@
+[
+    {
+        "name": "A&E",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=aie",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-aie.jpg"
+    },
+    {
+        "name": "ADULT SWIM",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=adultswim",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-adultswim.jpg"
+    },
+    {
+        "name": "AMC",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=amc",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-amc.jpg"
+    },
+    {
+        "name": "ANIMAL PLANET",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=animalplanet",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-animalplanet.jpg"
+    },
+    {
+        "name": "ARTE 1",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=arte1",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-arte1.jpg"
+    },
+    {
+        "name": "AXN",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=axn",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-axn.jpg"
+    },
+    {
+        "name": "BAND",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=band",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-band.jpg"
+    },
+    {
+        "name": "BAND NEWS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=bandnews",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-bandnews.jpg"
+    },
+    {
+        "name": "BAND SPORTS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=bandsports",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-bandsports.jpg"
+    },
+    {
+        "name": "BIS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=bis",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-bis.jpg"
+    },
+    {
+        "name": "CANAL BRASIL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=canalbrasil",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-canalbrasil.jpg"
+    },
+    {
+        "name": "CANÇÃO NOVA",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=cancaonova",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-cancaonova.jpg"
+    },
+    {
+        "name": "CARTOON NETWORK",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=cartoon",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-cartoon.jpg"
+    },
+    {
+        "name": "CARTOONITO",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=cartoonito",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-cartoonito.jpg"
+    },
+    {
+        "name": "CINEMAX",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=cinemax",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-cinemax.jpg"
+    },
+    {
+        "name": "CNN BRASIL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=cnnbrasil",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-cnnbrasil.jpg"
+    },
+    {
+        "name": "CNN BRASIL MONEY",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=cnnbrasilmoney",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-cnnbrasilmoney.jpg"
+    },
+    {
+        "name": "COMBATE",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=combate",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-combate.jpg"
+    },
+    {
+        "name": "COMEDY CENTRAL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=comedycentral",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-comedycentral.jpg"
+    },
+    {
+        "name": "CURTA!",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=curta",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-curta.jpg"
+    },
+    {
+        "name": "DISCOVERY CHANNEL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=discovery",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-discovery.jpg"
+    },
+    {
+        "name": "DISCOVERY HOME & HEALTH",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=discoveryhomeihealth",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-discoveryhomeihealth.jpg"
+    },
+    {
+        "name": "DISCOVERY KIDS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=discoverykids",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-discoverykids.jpg"
+    },
+    {
+        "name": "DISCOVERY SCIENCE",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=discoverysience",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-discoverysience.jpg"
+    },
+    {
+        "name": "DISCOVERY THEATER",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=discoverytheater",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-discoverytheater.jpg"
+    },
+    {
+        "name": "DISCOVERY TURBO",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=discoveryturbo",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-discoveryturbo.jpg"
+    },
+    {
+        "name": "DISCOVERY WORLD",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=discoveryworld",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-discoveryworld.jpg"
+    },
+    {
+        "name": "ESPN",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=espn",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-espn.jpg"
+    },
+    {
+        "name": "ESPN 2",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=espn2",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-espn2.jpg"
+    },
+    {
+        "name": "ESPN 3",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=espn3",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-espn3.jpg"
+    },
+    {
+        "name": "ESPN 4",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=espn4",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-espn4.jpg"
+    },
+    {
+        "name": "ESPN 5",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=espn5",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-espn5.jpg"
+    },
+    {
+        "name": "ESPN 6",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=espn6",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-espn6.jpg"
+    },
+    {
+        "name": "FISH TV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=fishtv",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-fishtv.jpg"
+    },
+    {
+        "name": "FOOD NETWORK",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=foodnetwork",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-foodnetwork.jpg"
+    },
+    {
+        "name": "GLOBO NEWS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=globonews",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-globonews.jpg"
+    },
+    {
+        "name": "GLOBO NORDESTE",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=bobonordeste",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-bobonordeste.jpg"
+    },
+    {
+        "name": "GLOBO RJ",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=boborj",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-boborj.jpg"
+    },
+    {
+        "name": "GLOBO SP",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=bobosp",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-bobosp.jpg"
+    },
+    {
+        "name": "GLOBOPLAY NOVELAS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=globoplaynovelas",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-globoplaynovelas.jpg"
+    },
+    {
+        "name": "GLOOB",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=gloob",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-gloob.jpg"
+    },
+    {
+        "name": "GLOOBINHO",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=gloobinho",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-gloobinho.jpg"
+    },
+    {
+        "name": "GNT",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=gnt",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-gnt.jpg"
+    },
+    {
+        "name": "HBO",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hbo",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hbo.jpg"
+    },
+    {
+        "name": "HBO2",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hbo2",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hbo2.jpg"
+    },
+    {
+        "name": "HBO FAMILY",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hbofamily",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hbofamily.jpg"
+    },
+    {
+        "name": "HBO MUNDI",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hbomundi",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hbomundi.jpg"
+    },
+    {
+        "name": "HBO PLUS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hboplus",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hboplus.jpg"
+    },
+    {
+        "name": "HBO POP",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hbopop",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hbopop.jpg"
+    },
+    {
+        "name": "HBO SIGNATURE",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hbosignature",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hbosignature.jpg"
+    },
+    {
+        "name": "HBO XTREME",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hboxtreme",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hboxtreme.jpg"
+    },
+    {
+        "name": "HGTV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=hgtv",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-hgtv.jpg"
+    },
+    {
+        "name": "HISTORY CHANNEL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=history",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-history.jpg"
+    },
+    {
+        "name": "HISTORY CHANNEL 2",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=history2",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-history2.jpg"
+    },
+    {
+        "name": "INVESTIGATION DISCOVERY",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=investigacaodiscovery",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-investigacaodiscovery.jpg"
+    },
+    {
+        "name": "LIFETIME",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=lifetime",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-lifetime.jpg"
+    },
+    {
+        "name": "MEGAPIX",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=megapix",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-megapix.jpg"
+    },
+    {
+        "name": "MODO VIAGEM",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=modoviagem",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-modoviagem.jpg"
+    },
+    {
+        "name": "MTV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=mtv",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-mtv.jpg"
+    },
+    {
+        "name": "MTV 00S",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=mtv00s",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-mtv00s.jpg"
+    },
+    {
+        "name": "MTV LIVE",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=mtvlive",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-mtvlive.jpg"
+    },
+    {
+        "name": "MULTISHOW",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=multishow",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-multishow.jpg"
+    },
+    {
+        "name": "NICK JR.",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=nickjr",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-nickjr.jpg"
+    },
+    {
+        "name": "NICKELODEON",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=nick",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-nick.jpg"
+    },
+    {
+        "name": "OFF",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=off",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-off.jpg"
+    },
+    {
+        "name": "PARAMOUNT NETWORK",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=paramount",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-paramount.jpg"
+    },
+    {
+        "name": "PREMIERE CLUBES",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=premiereclubes",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-premiereclubes.jpg"
+    },
+    {
+        "name": "PREMIERE 2",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=premiere2",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-premiere2.jpg"
+    },
+    {
+        "name": "PREMIERE 3",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=premiere3",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-premiere3.jpg"
+    },
+    {
+        "name": "PREMIERE 4",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=premiere4",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-premiere4.jpg"
+    },
+    {
+        "name": "PREMIERE 5",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=premiere5",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-premiere5.jpg"
+    },
+    {
+        "name": "PREMIERE 6",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=premiere6",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-premiere6.jpg"
+    },
+    {
+        "name": "PREMIERE 7",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=premiere7",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-premiere7.jpg"
+    },
+    {
+        "name": "PRIME BOX BRAZIL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=primeboxbrazil",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-primeboxbrazil.jpg"
+    },
+    {
+        "name": "RECORD NEWS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=recordnews",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-recordnews.jpg"
+    },
+    {
+        "name": "RECORD TV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=record",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-record.jpg"
+    },
+    {
+        "name": "REDE TV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=redetv",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-redetv.jpg"
+    },
+    {
+        "name": "SABOR & ARTE",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=saboriarte",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-saboriarte.jpg"
+    },
+    {
+        "name": "SBT",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sbt",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sbt.jpg"
+    },
+    {
+        "name": "SONY",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sony",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sony.jpg"
+    },
+    {
+        "name": "SONY MOVIES",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sonymovies",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sonymovies.jpg"
+    },
+    {
+        "name": "SPACE",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=space",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-space.jpg"
+    },
+    {
+        "name": "SPORTV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sportv1",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sportv1.jpg"
+    },    
+    {
+        "name": "SPORTV 2",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sportv2",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sportv2.jpg"
+    },
+    {
+        "name": "SPORTV 3",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sportv3",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sportv3.jpg"
+    {
+        "name": "SPORTYNET",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sportynet",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sportynet.jpg"
+    },
+    {
+        "name": "SPORTYNET+1",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sportynet1",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sportynet1.jpg"
+    },    
+    {
+        "name": "SPORTYNET+2",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sportynet2",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sportynet2.jpg"
+    },
+    {
+        "name": "SPORTYNET+3",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=sportynet3",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-sportynet3.jpg"
+    },
+    {
+        "name": "STUDIO UNIVERSAL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=studiouniversal",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-studiouniversal.jpg"
+    },
+    {
+        "name": "TELECINE ACTION",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=telecineaction",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-telecineaction.jpg"
+    },
+    {
+        "name": "TELECINE CULT",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=telecinecult",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-telecinecult.jpg"
+    },
+    {
+        "name": "TELECINE FUN",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=telecinefun",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-telecinefun.jpg"
+    },    
+    {
+        "name": "TELECINE PIPOCA",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=telecinepipoca",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-telecinepipoca.jpg"
+    },
+    {
+        "name": "TELECINE PREMIUM",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=telecinepremium",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-telecinepremium.jpg"
+    },
+    {
+        "name": "TELECINE TOUCH",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=telecinetouch",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-telecinetouch.jpg"
+    },
+    {
+        "name": "TIMES BRASIL/CNBC",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=cnbcbrasil",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-cnbcbrasil.jpg"
+    },
+    {
+        "name": "TLC",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=tlc",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-tlc.jpg"
+    },
+    {
+        "name": "TNT",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=tnt",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-tnt.jpg"
+    },    
+    {
+        "name": "TNT NOVELAS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=tntnovelas",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-tntnovelas.jpg"
+    },
+    {
+        "name": "TNT SÉRIES",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=tntseries",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-tntseries.jpg"
+    },
+    {
+        "name": "TRAVEL BOX BRAZIL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=travelboxbrazil",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-travelboxbrazil.jpg"
+    },
+    {
+        "name": "TV EVANGELIZAR",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=tvevangelizar",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-tvevangelizar.jpg"
+    },
+    {
+        "name": "UFC FIGHT PASS",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=ufcfightpass",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-ufcfightpass.jpg"
+    },
+    {
+        "name": "UNIVERSAL TV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=universal",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-universal.jpg"
+    },    
+    {
+        "name": "USA",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=usa",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-usa.jpg"
+    },
+    {
+        "name": "WARNER TV",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=warner",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-warner.jpg"
+    },
+    {
+        "name": "NOSSO FUTEBOL",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=nossofutebol",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-nossofutebol.jpg"
+    },
+    {
+        "name": "NOSSO FUTEBOL 1",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=nossofutebolm1",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-nossofutebolm1.jpg"
+    },
+    {
+        "name": "NOSSO FUTEBOL 2",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=nossofutebolm2",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-nossofutebolm2.jpg"
+    },
+    {
+        "name": "NOSSO FUTEBOL 3",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=nossofutebolm3",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-nossofutebolm3.jpg"
+    },
+    {
+        "name": "VIVA",
+        "url": "https://redecanaistv.gs/player3/ch.php?categoria=live&canal=viva",
+        "image": "https://redecanaistv.gd/assets/imgs-videos/Canais/thumb-viva.jpg"
+    }
+]
