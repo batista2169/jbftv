@@ -1,0 +1,375 @@
+/* ========================================
+   APP STYLES - Global Layout
+   ======================================== */
+
+/* Page Container - Base para todas as páginas */
+.page-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================================
+   TV PAGE LAYOUT
+   ======================================== */
+.tv-page {
+  padding-top: 64px; /* Espaço para o header */
+}
+
+.tv-page.theater-mode {
+  padding-top: 0;
+  background: #000;
+}
+
+.tv-page.theater-mode .tv-layout {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.tv-layout {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  max-height: calc(100vh - 64px);
+  max-height: calc(100dvh - 64px);
+  height: calc(100vh - 64px);
+  height: calc(100dvh - 64px);
+  overflow: hidden;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  z-index: 100;
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  max-height: 100%;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+/* ========================================
+   MOVIES PAGE LAYOUT
+   ======================================== */
+.movies-page {
+  /* Não precisa de padding top pois o catálogo tem seu próprio header interno */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.movies-page .catalog-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.movies-page.playing {
+  padding-top: 64px;
+}
+
+.movies-page .movie-player-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+/* ========================================
+   MOBILE TABS - Bottom Navigation
+   ======================================== */
+.mobile-tabs {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 15, 15, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+  z-index: 1000;
+  gap: 8px;
+}
+
+.mobile-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.mobile-tab svg {
+  width: 22px;
+  height: 22px;
+}
+
+.mobile-tab:active {
+  transform: scale(0.96);
+}
+
+.mobile-tab.active {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.2));
+  border-color: rgba(139, 92, 246, 0.4);
+  color: #fff;
+}
+
+.mobile-tab.active svg {
+  color: #8b5cf6;
+}
+
+.tab-badge {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* ========================================
+   MOBILE CONTENT
+   ======================================== */
+.mobile-content {
+  display: none;
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+.mobile-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  background: #0a0a0a;
+}
+
+.mobile-view.active {
+  display: flex;
+}
+
+/* Desktop only class */
+.desktop-only {
+  display: flex;
+}
+
+/* Mobile overlay */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ========================================
+   RESPONSIVE - Mobile
+   ======================================== */
+@media (max-width: 768px) {
+  .tv-page {
+    padding-top: 52px;
+    padding-bottom: 76px;
+  }
+
+  .tv-page.theater-mode {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .tv-layout {
+    flex-direction: column;
+    height: calc(100vh - 52px - 76px);
+    height: calc(100dvh - 52px - 76px);
+  }
+
+  .tv-page.theater-mode .tv-layout {
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  .movies-page.playing {
+    padding-top: 52px;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-tabs {
+    display: flex;
+  }
+
+  .mobile-content {
+    display: block;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none !important;
+    flex-direction: column;
+    background: #0a0a0a;
+  }
+
+  .mobile-view.active {
+    display: flex !important;
+  }
+
+  .mobile-overlay {
+    display: block;
+  }
+
+  .sidebar-wrapper {
+    position: fixed;
+    left: 0;
+    top: 52px;
+    bottom: 76px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar-wrapper.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    flex: 1;
+    min-height: 0;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - Small Mobile
+   ======================================== */
+@media (max-width: 480px) {
+  .mobile-tabs {
+    padding: 6px 12px;
+    gap: 6px;
+  }
+
+  .mobile-tab {
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+
+  .mobile-tab svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mobile-tab span:not(.tab-badge) {
+    font-size: 11px;
+  }
+
+  .tab-badge {
+    font-size: 9px;
+    padding: 1px 5px;
+    top: 4px;
+    right: 8px;
+  }
+}
+
+/* ========================================
+   THEATER MODE OVERRIDES
+   ======================================== */
+.theater-mode .app-header {
+  display: none;
+}
+
+/* ========================================
+   MOVIE PLAYER OVERLAY SYSTEM
+   ======================================== */
+
+/* Catálogo escondido quando player está ativo */
+.movies-page .catalog-container.hidden-catalog {
+  position: fixed;
+  visibility: hidden;
+  pointer-events: none;
+  /* Mantém no DOM para preservar estado mas invisível */
+}
+
+/* Player como overlay */
+.movie-player-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-player-overlay .movie-player-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  background: #000;
+  overflow: hidden;
+  padding-top: 64px; /* Espaço para o header */
+}
+
+/* Ajuste para quando tem header */
+.movies-page .app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .movie-player-overlay .movie-player-container {
+    padding-top: 52px;
+  }
+}
