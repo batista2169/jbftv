@@ -1,0 +1,76 @@
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://saimo-tv.pages.dev/
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\index.htm
+Content Type: text/html
+
+Uri: https://saimo-tv.pages.dev/assets/catalog-DF9Ddmaj.css
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\catalog-DF9Ddmaj.css
+Content Type: text/css
+
+Uri: https://saimo-tv.pages.dev/assets/catalog-jSs3LgFY.js
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\catalog-jSs3LgFY.js
+Content Type: application/javascript
+
+Uri: https://saimo-tv.pages.dev/assets/index-Dh6D8QeB.js
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\index-Dh6D8QeB.js
+Content Type: application/javascript
+
+Uri: https://saimo-tv.pages.dev/assets/index-DpowEKvg.css
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\index-DpowEKvg.css
+Content Type: text/css
+
+Uri: https://saimo-tv.pages.dev/assets/player-BDXZz2ZX.css
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\player-BDXZz2ZX.css
+Content Type: text/css
+
+Uri: https://saimo-tv.pages.dev/assets/player-D3KDwGIz.js
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\player-D3KDwGIz.js
+Content Type: application/javascript
+
+Uri: https://saimo-tv.pages.dev/assets/rolldown-runtime-D7CZUvY9.js
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\rolldown-runtime-D7CZUvY9.js
+Content Type: application/javascript
+
+Uri: https://saimo-tv.pages.dev/assets/tv-A3PsGUnZ.js
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\tv-A3PsGUnZ.js
+Content Type: application/javascript
+
+Uri: https://saimo-tv.pages.dev/assets/tv-DQKPoKq8.css
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\tv-DQKPoKq8.css
+Content Type: text/css
+
+Uri: https://saimo-tv.pages.dev/assets/vendor-react-Dkwbt6r_.js
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\vendor-react-Dkwbt6r_.js
+Content Type: application/javascript
+
+Uri: https://saimo-tv.pages.dev/assets/vendor-wxMFRiHW.js
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\assets\vendor-wxMFRiHW.js
+Content Type: application/javascript
+
+Uri: https://saimo-tv.pages.dev/vite.svg
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\vite.svg
+Content Type: image/svg+xml
+
+Uri: https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1
+File Name: C:\Downloaded Web Sites\saimo-tv.pages.dev\cv\js\sender\v1\cast_sender.js
+Content Type: text/javascript
+
