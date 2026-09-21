@@ -1,20 +1,19 @@
+
 <?php
-// 1. Captura o ID ou nome do canal via URL (ex: ?ch=telecine)
-$canal = isset($_GET['ch']) ? $_GET['ch'] : '';
+// Captura o canal enviado via ?ch= e limpa o texto por segurança
+$canal = isset($_GET['ch']) ? htmlspecialchars($_GET['ch']) : '';
 
-// 2. Banco de dados simples (Array) com as URLs dos fluxos M3U8
-$canais = [
-    'globo' => 'http://canalgov-stream.ebc.com.br/index.m3u8',
-    'sbt'   => 'http://video05.logicahost.com.br/guiatvpombal/guiatvpombal/playlist.m3u8',
-    'sportv'=> 'https://tv02.zas.media:1936/redesuper/redesuper/playlist.m3u8'
-];
-
-// 3. Verifica se o canal existe no array, se não, define um vídeo padrão ou erro
-if (array_key_exists($canal, $canais)) {
-    $video_url = $canais[$canal];
-} else {
-    // URL de teste padrão caso o canal não seja encontrado
-    $video_url = 'https://tv02.zas.media:1936/redesuper/redesuper/playlist.m3u8'; 
+// Define a URL padrão baseada no canal (Altere com o seu domínio ou lógica de caminhos)
+$stream_url = "https://tv02.zas.media:1936/redesuper/redesuper/playlist.m3u8";
+if (!empty($canal)) {
+    // Exemplo 1: Se o 'ch' for o link completo (ex: ?ch=https://site.com)
+    if (filter_var($canal, FILTER_VALIDATE_URL)) {
+        $stream_url = $canal;
+    } 
+    // Exemplo 2: Se o 'ch' for apenas o nome do canal (ex: ?ch=globo)
+    else {
+        $stream_url = "https://seu-servidor-de-stream.com{$canal}/index.m3u8";
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -22,55 +21,70 @@ if (array_key_exists($canal, $canais)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HLS Player Dinâmico</title>
+    <title>HLS Player - <?php echo $canal; ?></title>
     
-    <!-- Importa a biblioteca Hls.js para compatibilidade com navegadores que não suportam HLS nativo (como Chrome/PC) -->
-    <script src="https://jsdelivr.net"></script>
+    <!-- Estilos do Video.js -->
+    <link href="https://zencdn.net" rel="stylesheet" />
     
     <style>
-        body {
+        body, html {
             margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
             background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            overflow: hidden;
         }
-        video {
+        .video-container {
             width: 100%;
-            max-width: 800px;
-            border: 2px solid #333;
+            height: 100%;
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+        .video-js {
+            width: 100% !important;
+            height: 100% !important;
         }
     </style>
 </head>
 <body>
 
-    <!-- Elemento de vídeo HTML5 padrão -->
-    <video id="video" controls autoplay playsinline></video>
+    <div class="video-container">
+        <?php if (!empty($stream_url)): ?>
+            <video 
+                id="hls-player" 
+                class="video-js vjs-default-skin vjs-big-play-centered" 
+                controls 
+                preload="auto" 
+                autoplay 
+                muted
+                data-setup='{}'>
+                <source src="<?php echo $stream_url; ?>" type="application/x-mpegURL">
+                <p class="vjs-no-js">
+                    Para assistir a este vídeo, ative o JavaScript ou atualize para um navegador que 
+                    <a href="https://videojs.com" target="_blank">suporte vídeo HTML5</a>.
+                </p>
+            </video>
+        <?php else: ?>
+            <div style="color: white; font-family: sans-serif; text-align: center;">
+                <h2>Nenhum canal foi informado ou link inválido.</h2>
+                <p>Use: <code>hls-player.php?ch=globo</code> ou o link completo do .m3u8</p>
+            </div>
+        <?php endif; ?>
+    </div>
 
+    <!-- Scripts do Video.js -->
+    <script src="https://zencdn.net"></script>
     <script>
-        // Passa a URL gerada pelo PHP diretamente para o JavaScript
-        const videoSrc = "<?php echo $video_url; ?>";
-        const video = document.getElementById('video');
-
-        // Verifica se o navegador suporta Hls.js
-        if (Hls.isSupported()) {
-            const hls = new Hls();
-            hls.loadSource(videoSrc);
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                video.play();
-            });
-        }
-        // Caso o navegador já tenha suporte nativo a HLS (como o Safari no iOS/Mac)
-        else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = videoSrc;
-            video.addEventListener('loadedmetadata', function() {
-                video.play();
-            });
-        }
+        // Inicializa o player e força o autoplay se permitido pelo navegador
+        var player = videojs('hls-player');
+        player.ready(function() {
+            player.play();
+        });
     </script>
-
 </body>
 </html>
 
